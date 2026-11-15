@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MailCheck | Email Intelligence</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+    <div class="container">
+        <nav class="navbar">
+            <h2>✦ MailCheck</h2>
+            <span>EMAIL INTELLIGENCE SYSTEM</span>
+        </nav>
+
+        <main class="hero">
+            <p class="tagline">SMART EMAIL ANALYSIS</p>
+
+            <h1>Know your email's<br><span>trust level.</span></h1>
+
+            <p class="description">
+                Analyze email addresses with intelligent validation
+                and detailed security checks.
+            </p>
+
+            <div class="validator-card">
+                <label for="email">ENTER EMAIL ADDRESS</label>
+
+                <input type="email" id="email" placeholder="example@gmail.com">
+
+                <button id="validateBtn">Scan Email →</button>
+
+                <div id="result"></div>
+
+                <div id="report" class="report hidden">
+                    <h3>INTELLIGENCE REPORT</h3>
+                    <div id="checks"></div>
+                </div>
+            </div>
+
+            <p class="footer-text">POWERED BY MAILCHECK INTELLIGENCE</p>
+        </main>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
